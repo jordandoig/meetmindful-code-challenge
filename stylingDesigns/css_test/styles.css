@@ -1,0 +1,167 @@
+html, body {
+  color: #605b77;
+  font-family: 'MuseoSans';
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  color: darkgrey;
+  font-family: 'IntroBold';
+  font-size: 3em;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.1em;
+  margin: 0;
+  text-transform: lowercase;
+}
+
+h3 {
+  font-family: 'IntroBold';
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.1em;
+  text-align: justify;
+}
+
+.nav {
+  align-items: center;
+  border-bottom: 1px solid tan;
+  color: tan;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 8%;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0.5%;
+  width: 98%;
+}
+
+.logo {
+  height: 100%;
+  order: 1;
+  width: 70%;
+}
+
+.full {
+  height: 100%;
+}
+
+.small {
+  display: none;
+  height: 100%;
+}
+
+.heading {
+  align-items: center;
+  background: url('./img/splash.jpg') no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: center;
+  padding-bottom: 5%;
+  width: 100%;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  height: 60%;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.feature {
+  align-items: center;
+  background: url('./img/chakra.png') no-repeat center;
+  background-size: 10%;
+  border-right: 4px solid #605b77;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-around;
+  padding: 5%;
+  width: 23%;
+}
+
+.features div:nth-child(3) {
+  border-right: none;
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+  a {
+    font-size: 3em;
+  }
+
+  h1 {
+    font-size: 9em;
+  }
+
+  h2 {
+    font-size: 4em;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 4em;
+  }
+
+  p {
+    font-size: 2.3em;
+  }
+
+  .logo {
+    width: 15%;
+  }
+
+  .full {
+    display: none;
+  }
+
+  .small {
+    display: inline;
+  }
+
+  .features {
+    flex-direction: column;
+    height: 100%;
+    padding: 0 5%;
+    width: 90%;
+  }
+
+  .feature {
+    border-bottom: 10px solid #605b77;
+    border-right: none;
+    height: 33%;
+    padding: 0;
+    width: 100%;
+  }
+
+  .features div:nth-child(3) {
+    border-bottom: none;
+  }
+}
+
+@font-face {
+    font-family: 'MuseoSans';
+    src: url('./fonts/MuseoSans.otf');
+}
+
+@font-face {
+    font-family: 'IntroBold';
+    src: url('./fonts/IntroBold.otf');
+}
